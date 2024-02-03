@@ -1,0 +1,142 @@
+/* ... Autres styles ... */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(46, 46, 46);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out; /* Animation de fondu-in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Trait entre le titre et le texte */
+h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 10px auto;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: bounceIn 1s ease-out; /* Animation de rebondissement */
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%, 60% {
+        transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    20% {
+        transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    80% {
+        transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.carte {
+    background-color: rgb(56, 56, 56);
+    width: calc(23% - 2%); /* Calcul de la largeur avec la marge de 1% de chaque côté */
+    margin: 1%;
+    border: 1px solid rgb(44, 44, 44);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Transition pour agrandir la carte */
+}
+
+.carte:hover {
+    border-color: rgb(49, 49, 49); /* Couleur de la bordure lors du survol */
+    background-color: rgb(49, 49, 49);    
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Effet d'ombre lors du survol */
+    transform: scale(1.05); /* Agrandissement de la carte lors du survol */
+}
+
+.carte a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #ffffff; /* Couleur du texte des liens */
+}
+
+.carte img {
+    width: 100%;
+    height: 190px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: cover;
+    margin: -10px; /* Marge négative pour ajouter de l'espace entre l'image et les bords de la carte */
+    opacity: 0; /* Commence avec une opacité de 0 */
+    animation: fadeIn 1.5s ease-out forwards; /* Animation de fondu-in pour les images */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.carte-content {
+    padding: 15px;
+    position: relative;
+    text-decoration: none !important; /* Utilisation de !important pour assurer la priorité */
+}
+
+.carte-content a {
+    text-decoration: none !important; /* Supprimer le soulignement des liens à l'intérieur de .carte-content */
+    color: #ffffff; /* Couleur du texte des liens */
+}
+
+.carte-content h2 {
+    font-size: 18px; /* Taille de police du titre */
+    color: #FFD700; /* Couleur du titre */
+    margin-bottom: 10px;
+}
+
+.carte-content p {
+    font-size: 14px; /* Taille de police du texte */
+    color: #cccccc; /* Couleur du texte */
+    margin-bottom: 0;
+}
