@@ -1,6 +1,5 @@
-/* ... Autres styles ... */
-
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -9,33 +8,41 @@ body {
     background-position: center;
     color: #ffffff;
     text-align: center;
-    animation: fadeIn 1.5s ease-out; /* Animation de fondu-in */
+    animation: fadeIn 1.5s ease-out;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 header {
-    padding: 50px 0;
+    padding: 45px 0;
+}
+
+.top-right-text {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    color: rgb(207, 137, 23);
+    font-size: 14px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 50px;
     position: relative;
     margin-bottom: 15px;
 }
 
-/* Trait entre le titre et le texte */
 h1::after {
     content: "";
     display: block;
-    width: 150px;
+    width: 200px;
     height: 2px;
     background-color: #ffffff;
     margin: 10px auto;
@@ -46,16 +53,23 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: bounceIn 1s ease-out; /* Animation de rebondissement */
+    animation: bounceIn 1s ease-out;
 }
 
 @keyframes bounceIn {
-    from, 20%, 40%, 60%, 80%, to {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: translate3d(0, 0, 0);
     }
 
-    40%, 60% {
+    40%,
+    60% {
         transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
         transform: translate3d(0, -20px, 0);
     }
@@ -78,41 +92,37 @@ section {
 
 .carte {
     background-color: rgb(56, 56, 56);
-    width: calc(23% - 2%); /* Calcul de la largeur avec la marge de 1% de chaque côté */
+    width: calc(23% - 2%);
     margin: 1%;
     border: 1px solid rgb(44, 44, 44);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px;
-    transition: transform 0.3s ease; /* Transition pour agrandir la carte */
+    transition: transform 0.3s ease;
 }
 
 .carte:hover {
-    border-color: rgb(49, 49, 49); /* Couleur de la bordure lors du survol */
-    background-color: rgb(49, 49, 49);    
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Effet d'ombre lors du survol */
-    transform: scale(1.05); /* Agrandissement de la carte lors du survol */
-}
-
-.carte a {
-    text-decoration: none; /* Supprimer le soulignement des liens */
-    color: #ffffff; /* Couleur du texte des liens */
+    border-color: rgb(49, 49, 49);
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .carte img {
     width: 100%;
-    height: 190px; /* Ajustez la hauteur selon vos besoins */
+    height: 190px;
     object-fit: cover;
-    margin: -10px; /* Marge négative pour ajouter de l'espace entre l'image et les bords de la carte */
-    opacity: 0; /* Commence avec une opacité de 0 */
-    animation: fadeIn 1.5s ease-out forwards; /* Animation de fondu-in pour les images */
+    margin: -10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -121,22 +131,22 @@ section {
 .carte-content {
     padding: 15px;
     position: relative;
-    text-decoration: none !important; /* Utilisation de !important pour assurer la priorité */
+    text-decoration: none !important;
 }
 
 .carte-content a {
-    text-decoration: none !important; /* Supprimer le soulignement des liens à l'intérieur de .carte-content */
-    color: #ffffff; /* Couleur du texte des liens */
+    text-decoration: none !important;
+    color: #ffffff;
 }
 
 .carte-content h2 {
-    font-size: 18px; /* Taille de police du titre */
-    color: #FFD700; /* Couleur du titre */
+    font-size: 25px;
+    color: #FFD700;
     margin-bottom: 10px;
 }
 
 .carte-content p {
-    font-size: 14px; /* Taille de police du texte */
-    color: #cccccc; /* Couleur du texte */
+    font-size: 14px;
+    color: #cccccc;
     margin-bottom: 0;
 }
