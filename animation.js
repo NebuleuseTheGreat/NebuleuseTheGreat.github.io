@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.carte');
-
-    window.addEventListener('scroll', startAnimation);
 
     function startAnimation() {
         cards.forEach(card => {
@@ -13,5 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    window.addEventListener('scroll', startAnimation);
+
     startAnimation();
 });
