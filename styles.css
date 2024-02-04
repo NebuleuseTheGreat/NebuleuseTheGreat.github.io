@@ -31,6 +31,7 @@ header {
     right: 10px;
     color: rgb(207, 137, 23);
     font-size: 14px;
+    text-align: center;
 }
 
 h1 {
@@ -141,6 +142,7 @@ section {
 
 .carte-content h2 {
     font-size: 25px;
+    text-decoration: underline;
     color: #FFD700;
     margin-bottom: 10px;
 }
