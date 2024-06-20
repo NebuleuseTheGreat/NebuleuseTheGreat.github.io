@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SAW</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="icon" type="image/jpg" href="./images/SAWlogo.jpg" />
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+	<header role="banner" id="fh5co-header">
+		<div class="fluid-container">
+			<nav class="navbar navbar-default navbar-fixed-top js-fullheight">
+				<div id="navbar" class="navbar-collapse js-fullheight">
+					<ul class="nav navbar-nav navbar-left">
+						<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+						<li><a href="#" data-nav-section="services"><span>Services</span></a></li>
+						<li><a href="#" data-nav-section="explore"><span>Project</span></a></li>
+						<li><a href="#" data-nav-section="team"><span>Team</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<section id="fh5co-home" data-section="home"
+		style="background-image: url(./images/bleu.png);"
+		data-stellar-background-ratio="0.5">
+		<div class="gradient"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center">
+							<img class="to-animate" src="./images/Saw_DevTeam.png" alt="SAW logo dev team" width="90" height="90">
+							<h1 class="to-animate">Starblast Astéroïde War</h1>
+							<h2 class="to-animate">Official website of the mod, SAW of the game <a
+									href="http://starblast.io/" target="_blank">Starblast.io</a> <br> Website create by
+								Nébuleuse</a></h2>
+								<div class="to-animate" class="button-container">
+									<button class="btn" onclick="showVideo()">official Trailer</button>
+								</div>
+							
+								<div class="overlay" id="overlay" onclick="hideVideo(event)">
+									<div class="video-popup" onclick="event.stopPropagation()">
+										<iframe id="video" src="https://www.youtube.com/embed/9ZkyF9jZ3ZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<script>
+											function showVideo() {
+												document.getElementById('overlay').style.display = 'flex';
+											}
+											function hideVideo(event) {
+												if (event) {
+													event.stopPropagation();
+												}
+												document.getElementById('overlay').style.display = 'none';
+												var iframe = document.getElementById('video');
+												iframe.src = iframe.src;
+											}
+										</script>
+										    <style>
+												body {
+													font-family: Arial, sans-serif;
+												}
+										
+												.button-container {
+													text-align: center;
+													margin-top: 50px;
+												}
+										
+												.btn {
+													padding: 10px 20px;
+													font-size: 18px;
+													cursor: pointer;
+													background-color: #007bff;
+													color: white;
+													border: none;
+													border-radius: 5px;
+												}
+										
+												.overlay {
+													display: none;
+													position: fixed;
+													top: 0;
+													left: 0;
+													width: 100%;
+													height: 100%;
+													background-color: rgba(0, 0, 0, 0.7);
+													justify-content: center;
+													align-items: center;
+												}
+										
+												.video-popup {
+													position: relative;
+													width: 80%;
+													max-width: 800px;
+												}
+										
+												.video-popup iframe {
+													width: 100%;
+													height: 450px;
+												}
+											</style>
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-services" data-section="services">
+		<div class="fh5co-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">what is SAW ?</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">It's a mod in Stablast's modding space, with an original new
+									shiptree, and other interesting features like asteroid waves.</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="core-features">
+						<div class="grid2 to-animate" style="background-image: url(./images/11.png);">
+						</div>
+						<div class="grid2">
+							<div class="core-f">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="core">
+											<i class="sbg-station"></i>
+											<div class="fh5co-post to-animate">
+												<h3>3 teams</h3>
+												<p>As with the classic team mode, SAW also has 3 stations, the only difference being that here the basic colors don't change.</p>
+											</div>
+										</div>
+										<div class="core">
+											<i class="sbg-ship"></i>
+											<div class="fh5co-post to-animate">
+												<h3>new shiptree</h3>
+												<p>SAW features a large, fully-customized Shiptree, with lots of different ships and play styles.</p>
+											</div>
+										</div>
+										<div class="core">
+											<i class="sbg-asteroid"></i>
+											<div class="fh5co-post to-animate">
+												<h3>asteroid wave</h3>
+												<p>The main feature of the SAW mod is that, at certain times, powerful asteroid waves are triggered, forcing each team to adapt to this new constraint and enabling new strategies.</p>
+											</div>
+										</div>
+										<div class="core">
+											<i class="sbg-other"></i>
+											<div class="fh5co-post to-animate">
+												<h3>other added</h3>
+												<p>There are also other special features, such as random sector names in a new, unique list and a slightly larger map.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="fh5co-counter-section" class="fh5co-counters">
+					<div class="container">
+						<div class="row to-animate">
+							<div class="col-md-3 text-center">
+								<span class="fh5co-counter js-counter" data-from="0" data-to="43" data-speed="7500"
+									data-refresh-interval="50"></span>
+								<span class="fh5co-counter-label">Ship</span>
+							</div>
+							<div class="col-md-3 text-center">
+								<span class="fh5co-counter js-counter" data-from="0" data-to="550" data-speed="6000"
+									data-refresh-interval="50"></span>
+								<span class="fh5co-counter-label">discord member</span>
+							</div>
+							<div class="col-md-3 text-center">
+								<span class="fh5co-counter js-counter" data-from="0" data-to="4" data-speed="4000"
+									data-refresh-interval="50"></span>
+								<span class="fh5co-counter-label">dev</span>
+							</div>
+							<div class="col-md-3 text-center">
+								<span class="fh5co-counter js-counter" data-from="0" data-to="26" data-speed="8000"
+									data-refresh-interval="50"></span>
+								<span class="fh5co-counter-label">pitching game</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-explore" data-section="explore">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">project picture</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Here are a few images and renderings of the mod and its Shiptree, as well as some
+								related images.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-project">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="project-grid to-animate-2"
+							style="background-image:  url(./images/Newest_shippath.jpg);">
+							<div class="desc">
+								<h3><a href="./images/Newest_shippath.jpg">all ShipTree</a></h3>
+								<span>By: Hazard</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="project-grid to-animate-2" style="background-image:  url(./images/11.png);">
+							<div class="desc">
+								<h3><a href="./images/11.png">Oresta rendering 4K</a></h3>
+								<span>By: Nébuleuse</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="project-grid to-animate-2"
+							style="background-image:  url(./images/Монохромное\ путешествие\ по\ звездам.jpg);">
+							<div class="desc">
+								<h3><a href="./images/Монохромное\ путешествие\ по\ звездам.jpg">gggggg</a></h3>
+								<span>By: Hazard</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="project-grid to-animate-2" style="background-image:  url(./images/Монохромное\ путешествие\ по\ звездам.jpg);">
+							<div class="desc">
+								<h3><a href="./images/Монохромное\ путешествие\ по\ звездам.jpg">ggggg</a></h3>
+								<span>By: Hazard</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="project-grid to-animate-2" style="background-image:  url(./images/Монохромное\ путешествие\ по\ звездам.jpg);">
+							<div class="desc">
+								<h3><a href="./images/Монохромное\ путешествие\ по\ звездам.jpg">gggggg</a></h3>
+								<span>By: Hazard</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center">
+						<div class="project-grid to-animate-2" style="background-image:  url(./images/Монохромное\ путешествие\ по\ звездам.jpg);">
+							<div class="desc">
+								<h3><a href="./images/Монохромное\ путешествие\ по\ звездам.jpg">gggggggg</a></h3>
+								<span>By: Hazard</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-team" data-section="team">
+		<div class="fh5co-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Dev team</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">Here are the 4 creators of the SAW mod. You'll find a short description of who they are, and their networks. </h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="./images/megaPDP.jpg" alt="megalodon">
+							</div>
+							<h3>Megalodon</h3>
+							<span class="position">Co-Founder, mod developer</span>
+							<p>I've been playing Starblast since 2017, I'm one of the best European players, creator of the famous "Megs dueling" mod, Alien Speedrun, as well as lead developer of Starblast Asteroid War.</p>
+							<ul class="social-media">
+								<li><a href="https://www.youtube.com/@Megalodon132" class="Youtube"><i
+											class="icon-youtube"></i></a></li>
+								<li><a href="https://github.com/TheGreatMegalodon" class="github"><i
+											class="icon-github"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="./images/HazardPDP.jpg" alt="hazard">
+							</div>
+							<h3>Hazard</h3>
+							<span class="position">Co-Founder, Shiptree builder, rendering designer</span>
+							<p>I've been playing Starblast since 2017, I'm one of the best European players, creator of the famous "Megs dueling" mod, Alien Speedrun, as well as lead developer of Starblast Asteroid War.</p>
+							<ul class="social-media">
+								<li><a href="https://www.youtube.com/@HazardStarblast" class="Youtube"><i
+											class="icon-youtube"></i></a></li>
+								<li><a href="https://github.com/HazardXS" class="github"><i class="icon-github"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="./images/Nébulium.jpg" alt="nebuleuse">
+							</div>
+							<h3>Nébuleuse</h3>
+							<span class="position">Co-Founder, organizer, rendering designer</span>
+							<p>I started playing Starblast in 2017, I consider myself a pretty good player especially in team mode, I always stay active on the game and in the community, in SAW I took care of the community part, I greatly helped its creation, so do this site.</p>
+							<ul class="social-media">
+								<li><a href="https://www.youtube.com/channel/UCh37M4k1kAw3SSddjhNjJkw"
+										class="Youtube"><i class="icon-youtube"></i></a></li>
+								<li><a href="https://github.com/NebuleuseTheGreat" class="github"><i
+											class="icon-github"></i></a></li>
+								<li><a href="https://open.spotify.com/user/32hqo7eihra0fmi6ekn4jvvcl?si=8971178fc8b84220" class="spotify"><i
+												class="icon-spotify"></i></a></li>		
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="col-md-4">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="./images/PDPlx.jpg" alt="Lx"></div>
+							<h3>LX</h3>
+							<span class="position">Co-Founder, organizer, rendering designer</span>
+							<p>I've been playing Starblast since 2017, I'm one of the best European players, creator of the famous "Megs dueling" mod, Alien Speedrun, as well as lead developer of Starblast Asteroid War.</p>
+							<ul class="social-media">
+								<li><a href="https://www.youtube.com/@lx3057" class="Youtube"><i
+											class="icon-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="getting-started getting-started-1">
+		<div class="getting-grid"
+			style="background-image:  url(./images/Capture\ d\'écran\ 2024-05-20\ 140236.png);">
+			<div class="desc text-center">
+				<h2>download</h2>
+				<p>Here you can find the official SAW mod, as well as a shiptree test version.</p>
+				<p><a href="./officialMod.txt" download="nom-du-fichier.ext" class="btn btn-primary">official mod</a></p>
+				<p><a href="./ShipTesting.txt" download="nom-du-fichier.ext" class="btn btn-primary">ship testing</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+
+				<h3 class="section-title">Connect with Us</h3>
+				<ul class="social-media">
+					<li><a href="#" class="discord"><i class="fab fa-discord"></i></a></li>
+					<li><a href="#" class="Youtube"><i class="icon-youtube"></i></a></li>
+					<li><a href="#" class="github"><i class="icon-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.countTo.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
