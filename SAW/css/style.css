@@ -1,4 +1,42 @@
 @font-face {
+  font-family: 'SBGlyphs';
+  src: url('https://starblast.data.neuronality.com/fonts/starblast-glyphs.ttf?v=1');
+  font-weight: normal;
+  font-style: normal
+}
+
+.sbg {
+  display: inline-block;
+  font: normal normal normal 14px/1 SBGlyphs;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.sbg-station:before {
+  content: "\0034";
+  font-family: 'SBGlyphs'
+}
+
+.sbg-ship:before {
+  content: "\00c1";
+  font-family: 'SBGlyphs'
+}
+
+.sbg-asteroid:before {
+  content: "\002f";
+  font-family: 'SBGlyphs'
+}
+
+.sbg-other:before {
+  content: "\0078";
+  font-family: 'SBGlyphs'
+}
+
+
+
+@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
