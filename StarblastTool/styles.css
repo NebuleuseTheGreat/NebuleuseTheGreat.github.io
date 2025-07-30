@@ -6,16 +6,38 @@
 }
 
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom left, rgb(50, 50, 50), rgb(30, 30, 30));
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
     text-align: center;
-    animation: fadeIn 1.5s ease-out;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/bg.png') no-repeat center center/cover;
+    z-index: -2;
+    filter: blur(3px);
+    transform: scale(1.1);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 @keyframes fadeIn {
@@ -43,21 +65,30 @@ header {
 }
 
 @keyframes breathe {
-    0%, 100% {
-        text-shadow: 0 0 1px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+
+    0%,
+    100% {
+        text-shadow: 0 0 -0.5px rgba(83, 0, 134, 0.8),
+            0 0 20px rgba(83, 0, 134, 0.8),
+            0 0 30px rgba(83, 0, 134, 0.8);
     }
 
     50% {
-        text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0 0.5px rgba(83, 0, 134, 0.9),
+            0 0 30px rgba(83, 0, 134, 0.9),
+            0 0 40px rgba(83, 0, 134, 1);
     }
 }
+
 
 h1 {
     font-size: 40px;
     font-family: 'ethnocentric', sans-serif;
     position: relative;
     margin-bottom: 15px;
-    animation: breathe 5s infinite;
+    animation: breathe 7s infinite;
+    color: rgb(83, 0, 134);
+    /* violet */
 }
 
 h1::after {
@@ -74,17 +105,25 @@ section {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    overflow: visible;
     justify-content: center;
     animation: bounceIn 1s ease-out;
 }
 
 @keyframes bounceIn {
-    from, 20%, 40%, 60%, 80%, to {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
         transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: translate3d(0, 0, 0);
     }
 
-    40%, 60% {
+    40%,
+    60% {
         transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
         transform: translate3d(0, -20px, 0);
     }
@@ -106,16 +145,19 @@ section {
 }
 
 .carte {
-    background-color: rgb(50, 50, 50);
+    background-color: rgba(255, 255, 255, 0.07);
     width: calc(23% - 2%);
-    margin: 1%;
-    border: 1px solid rgb(44, 44, 44);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    margin: 1.5%;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 30px 10px 30px 10px;
     overflow: hidden;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+    transform-origin: center center;
+    transition: transform 0.3s ease, z-index 0s;
     opacity: 0;
+    color: #ffffff;
+    will-change: transform;
+    position: relative;
 }
 
 .carte.animated {
@@ -129,19 +171,15 @@ section {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translate3d(0, 50px, 0);
     }
 
     to {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
     }
 }
 
 .carte:hover {
-    border-color: rgb(42, 42, 42);
-    background-color: rgb(42, 42, 42);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    z-index: 10;
     transform: scale(1.07);
 }
 
@@ -151,16 +189,16 @@ section {
     object-fit: cover;
     margin: -10px;
     opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
+    animation: fadeInImage 1.5s ease-out forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInImage {
     from {
         opacity: 0;
     }
 
     to {
-        opacity: 1;
+        opacity: 0.9;
     }
 }
 
@@ -177,13 +215,17 @@ section {
 
 .carte-content h2 {
     font-size: 25px;
-    text-decoration: underline;
-    color: #FFD700;
+    text-decoration: none;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
+.carte-content p a {
+    text-decoration: none !important;
+}
+
 .carte-content p {
-    font-size: 14px;
-    color: #cccccc;
+    font-size: 16px;
+    color: #ffffff;
     margin-bottom: 0;
 }
