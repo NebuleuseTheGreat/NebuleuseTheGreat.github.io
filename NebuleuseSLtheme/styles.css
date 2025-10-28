@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Orbitron:wght@500&display=swap');
+
+body, html {
+    font-family: 'Domine', serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    background: url('picture/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('picture/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  z-index: 0;
+}
+
+#blur-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+    pointer-events: none;
+    transition: none !important; 
+}
+
+#page-content {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 55px;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+}
+
+
+p, a {
+    font-family: 'Orbitron', serif;
+    font-size: 17px;
+}
+
+#top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    height: 40px;
+}
+
+#top-bar div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.top-left, .top-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.top-logo {
+    height: 32px;
+    width: auto;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.top-logo:hover {
+    transform: scale(1.05);
+}
+
+.top-title {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#top-bar h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+#discord-button{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: translateY(3px);
+}
+
+#discord-button:hover {
+    transform: scale(1.1);
+}
+
+#info-button {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#info-button:hover {
+    transform: scale(1.1);
+}
+
+#info-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    margin: 30px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(49, 49, 49, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 40px 10px 40px 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 2000;
+    backdrop-filter: blur(15px);
+}
+
+#info-popup h5 {
+    color: rgb(173, 2, 2);
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    margin: 5px 0;     
+    padding: 0;
+    line-height: 1.2;   
+}
+
+#info-popup hr {
+    font-family: 'Orbitron', sans-serif;
+    margin: 5px 0;    
+    padding: 0;
+}
+
+#info-popup b {
+    font-family: 'Orbitron', sans-serif;
+    display: block;   
+    margin: 5px 0;      
+}
+
+.close-button {
+    transition: transform 0.2s ease;
+    cursor: default; 
+}
+
+.close-button:hover {
+    cursor: pointer;       
+}
+
+#home, #video-section, #cards {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+#video-section {
+    width: 100%;
+    padding: 50px 20px;
+    background: none;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+#cards {
+    width: 100%;
+    padding: 50px 20px;
+    background: none;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+    width: 220px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 13px 3px 13px 3px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#content {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#content .container p {
+    margin-bottom: 30px;
+    font-family: 'Orbitron', serif;
+    font-size: 20px;
+}
+
+
