@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Oméga Black Forest</title>
+    <link rel="stylesheet" href="../../final-style.css">
+    <link rel="icon" href="../../picture/NebuSL+themeico.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700&family=Orbitron:wght@500&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="blur-overlay"></div>
+    <div id="page-content">
+        <div id="top-bar">
+            <div class="top-bar-left">
+                <a href="../NEBULAomega.html" class="top-logo-link">
+                    <img src="../../picture/Nebulosa.png" alt="Logo" class="top-logo">
+                </a>
+                <span class="top-title">| Nébuleuse ServerList+ theme</span>
+            </div>
+            <h1>Nébula Oméga Black Forest</h1>
+        </div>
+
+        <div class="container">
+            <h1>Nébula Oméga Black Forest</h1>
+            <p>In the heart of the forest, where light forgets to wander, shadows weave their hymns of sorrow. Mist breathes like a ghost upon black waters, and ancient trees whisper secrets to the night secrets only the lost dare to hear.</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="./picture/Black-forest.png" alt="Image 1" class="image"
+                        onclick="openImage('./picture/Black-forest.png')">
+                    <a href="./picture/Black-forest.png" download="Black-forest.png" class="btn-download" target="_blank">download the
+                        wallpaper</a>
+                </div>
+                <div class="image-item">
+                    <img src="./picture/Black-forestVisual.png" alt="Image 2" class="image"
+                        onclick="openImage('./picture/Black-forestVisual.png')">
+                    <a href="./theme/Black-forest_theme.txt" download="document.txt" class="btn-download" target="_blank">download the
+                        theme</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeImage()">
+            <span id="close" class="close" onclick="closeImage()">&#10006;</span>
+            <img id="modal-image" src="" alt="Image agrandie">
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

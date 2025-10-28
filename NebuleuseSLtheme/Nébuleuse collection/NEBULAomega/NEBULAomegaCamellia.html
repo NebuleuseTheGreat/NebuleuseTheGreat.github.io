@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Oméga Camellia</title>
+    <link rel="stylesheet" href="../../final-style.css">
+    <link rel="icon" href="../../picture/NebuSL+themeico.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700&family=Orbitron:wght@500&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="blur-overlay"></div>
+    <div id="page-content">
+        <div id="top-bar">
+            <div class="top-bar-left">
+                <a href="../NEBULAomega.html" class="top-logo-link">
+                    <img src="../../picture/Nebulosa.png" alt="Logo" class="top-logo">
+                </a>
+                <span class="top-title">| Nébuleuse ServerList+ theme</span>
+            </div>
+            <h1>Nébula Oméga Camellia</h1>
+        </div>
+
+        <div class="container">
+            <h1>Nébula Oméga Camellia</h1>
+            <p>Bathed in moonlit grace, the lilies breathe whispers of serenity. Each petal glows like frozen dawn, fragile yet eternal. In their stillness, time softens dreams drift like snow, and silence blooms, tender and infinite, beneath a sky of silver light.</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="./picture/Camellia.png" alt="Image 1" class="image"
+                        onclick="openImage('./picture/Camellia.png')">
+                    <a href="./picture/Camellia.png" download="Camellia.png" class="btn-download" target="_blank">download the
+                        wallpaper</a>
+                </div>
+                <div class="image-item">
+                    <img src="./picture/CamelliaVisual.png" alt="Image 2" class="image"
+                        onclick="openImage('./picture/CamelliaVisual.png')">
+                    <a href="./theme/Camellia_theme.txt" download="document.txt" class="btn-download" target="_blank">download the
+                        theme</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeImage()">
+            <span id="close" class="close" onclick="closeImage()">&#10006;</span>
+            <img id="modal-image" src="" alt="Image agrandie">
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

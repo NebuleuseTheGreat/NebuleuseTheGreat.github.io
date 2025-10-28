@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Oméga Lycoris</title>
+    <link rel="stylesheet" href="../../final-style.css">
+    <link rel="icon" href="../../picture/NebuSL+themeico.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700&family=Orbitron:wght@500&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="blur-overlay"></div>
+    <div id="page-content">
+        <div id="top-bar">
+            <div class="top-bar-left">
+                <a href="../NEBULAomega.html" class="top-logo-link">
+                    <img src="../../picture/Nebulosa.png" alt="Logo" class="top-logo">
+                </a>
+                <span class="top-title">| Nébuleuse ServerList+ theme</span>
+            </div>
+            <h1>Nébula Oméga Lycoris</h1>
+        </div>
+
+        <div class="container">
+            <h1>Nébula Oméga Lycoris</h1>
+            <p>A single flower, ink-born and fragile, blooms in the silence of white. Its lines whisper of grace and sorrow intertwined like a memory refusing to fade, suspended between life and longing, where beauty and melancholy quietly meet.</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="./picture/Lycoris.png" alt="Image 1" class="image"
+                        onclick="openImage('./picture/Lycoris.png')">
+                    <a href="./picture/Lycoris.png" download="Lycoris.png" class="btn-download" target="_blank">download the
+                        wallpaper</a>
+                </div>
+                <div class="image-item">
+                    <img src="./picture/LycorisVisual.png" alt="Image 2" class="image"
+                        onclick="openImage('./picture/LycorisVisual.png')">
+                    <a href="./theme/Lycoris_theme.txt" download="document.txt" class="btn-download" target="_blank">download the
+                        theme</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeImage()">
+            <span id="close" class="close" onclick="closeImage()">&#10006;</span>
+            <img id="modal-image" src="" alt="Image agrandie">
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

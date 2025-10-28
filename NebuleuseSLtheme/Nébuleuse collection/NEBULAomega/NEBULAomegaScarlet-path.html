@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Oméga Scarlet Path</title>
+    <link rel="stylesheet" href="../../final-style.css">
+    <link rel="icon" href="../../picture/NebuSL+themeico.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lora:ital,wght@0,400..700&family=Orbitron:wght@500&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="blur-overlay"></div>
+    <div id="page-content">
+        <div id="top-bar">
+            <div class="top-bar-left">
+                <a href="../NEBULAomega.html" class="top-logo-link">
+                    <img src="../../picture/Nebulosa.png" alt="Logo" class="top-logo">
+                </a>
+                <span class="top-title">| Nébuleuse ServerList+ theme</span>
+            </div>
+            <h1>Nébula Oméga Scarlet Path</h1>
+        </div>
+
+        <div class="container">
+            <h1>Nébula Oméga Scarlet Path</h1>
+            <p>Scarlet lanterns breathe through the mist, painting the path with echoes of forgotten prayers. Reflections ripple like bloodied memories beneath torii gates that guard the silence. Here, the night hums softly a sacred whisper between worlds, eternal and unseen.</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="./picture/Scarlet-path.png" alt="Image 1" class="image"
+                        onclick="openImage('./picture/Scarlet-path.png')">
+                    <a href="./picture/Scarlet-path.png" download="Scarlet-path.png" class="btn-download" target="_blank">download the
+                        wallpaper</a>
+                </div>
+                <div class="image-item">
+                    <img src="./picture/Scarlet-pathVisual.png" alt="Image 2" class="image"
+                        onclick="openImage('./picture/Scarlet-pathVisual.png')">
+                    <a href="./theme/Scarlet-path_theme.txt" download="document.txt" class="btn-download" target="_blank">download the
+                        theme</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeImage()">
+            <span id="close" class="close" onclick="closeImage()">&#10006;</span>
+            <img id="modal-image" src="" alt="Image agrandie">
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
