@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTN Team Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-fx">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <button id="info-btn" class="info-btn">i</button>
+
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">INFORMATION</h2>
+            
+            <div class="modal-body">
+                <p><strong>Dev:</strong> Nébuleuse</p>
+                <p><strong>Version:</strong> 3.0</p>
+                
+                <hr>
+                
+                <h3>📁 Comment importer les données ?</h3>
+                <p>Créez un fichier texte (ex: <code>players.txt</code>) contenant les joueurs et leurs notes au format JSON strict. Exemple :</p>
+                <pre class="code-block">
+{
+  "Joueur1": 8.5,
+  "Joueur2": 6,
+  "Joueur3": 7.5
+}
+                </pre>
+                
+                <h3>⚙️ Comment ça marche ?</h3>
+                <p>Le système utilise un algorithme "glouton". Il trie les joueurs par note, puis attribue chaque joueur à l'équipe qui a actuellement le score total le plus bas. Cela garantit un équilibre mathématique quasi-parfait entre les équipes.</p>
+                
+                <h3>⚖️ Droits & Utilisation</h3>
+                <p>Ce site est libre d'utilisation. Vous pouvez modifier et réutiliser le code source à condition de mentionner le nom du développeur (Nébuleuse). En cas de problème ou de bug, veuillez me contacter.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>S O T N</h1>
+            <div class="subtitle">TEAM GENERATOR // SYSTEM V3</div>
+        </header>
+
+        <div class="step-container" id="step-1">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <h2>IMPORT DATA</h2>
+            </div>
+            <p style="color: #ccc; font-size: 0.9rem; margin-bottom: 15px;">
+                Please upload the .txt file containing player database.
+            </p>
+            
+            <div class="upload-area">
+                <input type="file" id="file-input" accept=".txt,.json">
+            </div>
+            <div id="upload-status" style="margin-top:10px; color: var(--neon-secondary);"></div>
+
+            <button class="btn-neon" onclick="goToStep2()" id="btn-step-1" disabled style="opacity:0.5; cursor:not-allowed;">NEXT STEP</button>
+        </div>
+
+        <div class="step-container hidden" id="step-2">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <h2>TEAM CONFIGURATION</h2>
+            </div>
+            
+            <div class="teams-config-grid" id="teams-list"></div>
+
+            <div class="add-team-form">
+                <input type="text" id="new-team-name" placeholder="New Team Name">
+                <input type="color" id="new-team-color" value="#ff00ff">
+                <button class="btn-neon btn-small" onclick="addNewTeam()">ADD</button>
+            </div>
+
+            <button class="btn-neon" onclick="goToStep3()">VALIDATE TEAMS</button>
+        </div>
+
+        <div class="step-container hidden" id="step-3">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <h2>ASSIGN LEADERS</h2>
+            </div>
+            <div class="leaders-grid" id="leaders-container"></div>
+        </div>
+
+        <div class="step-container hidden" id="step-4">
+            <div class="step-header">
+                <div class="step-number">4</div>
+                <h2>SELECT SQUAD</h2>
+            </div>
+            <div style="margin-bottom: 10px; font-size: 0.8rem; color: #aaa;">
+                Select players available for the match. Scores are hidden.
+            </div>
+            
+            <div class="player-pool" id="player-pool"></div>
+            
+            <div style="margin-top: 15px; text-align: center; color: var(--neon-secondary)">
+                Players selected: <span id="count-selected">0</span>
+            </div>
+
+            <button class="btn-neon" onclick="generateTeams()">INITIATE GENERATION</button>
+        </div>
+
+        <div id="results-area">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #fff; font-family: 'Orbitron'">// MATCHUP READY</h2>
+            <div class="teams-display" id="teams-output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
