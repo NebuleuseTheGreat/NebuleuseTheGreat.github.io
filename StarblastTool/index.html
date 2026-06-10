@@ -7,135 +7,156 @@
     <title>Tools for Starblast</title>
     <meta content="Tools for Starblast" property="og:title">
     <meta content="On this website, you'll find a wide range of tools for Starblast." property="og:description">
-    <meta content="#bc13fe" data-react-helmet="true" name="theme-color">
+    <meta content="#ff2d8a" data-react-helmet="true" name="theme-color">
     <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'ethnocentric';
+            src: url('ethnocentric rg.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="background-animation">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
+    <div id="top"></div>
+    <canvas id="starfield"></canvas>
+    <div id="background"></div>
+
+    <div id="page-content">
+
+        <div id="top-bar">
+            <div class="top-left">
+                <a href="#top" class="top-logo-link"><img src="img/logo.png" alt="Logo" class="top-logo"></a>
+                <span class="top-title">All Tools for Starblast</span>
+            </div>
+            <div class="top-right">
+                <span class="top-credit">by 𝒩𝑒́𝒷𝓊𝓁𝑒𝓊𝓈𝑒</span>
+            </div>
+        </div>
+
+        <header>
+            <h1>ALL TOOLS FOR STARBLAST</h1>
+            <p class="subtitle">Welcome to this website, where you'll find lots of useful tools for Starblast</p>
+        </header>
+
+        <section class="container">
+
+            <a href="https://starblast.io/modding.html" class="carte">
+                <div class="img-container"><img src="img/modding.png" alt="modding space"></div>
+                <div class="carte-content">
+                    <h2>Modding Space</h2>
+                    <p>Code custom parts (ECP required)</p>
+                </div>
+            </a>
+
+            <a href="https://starblast.io/shipeditor/" class="carte">
+                <div class="img-container"><img src="img/shipeditor.png" alt="shipEditor"></div>
+                <div class="carte-content">
+                    <h2>Ship Editor</h2>
+                    <p>Create custom ships officially</p>
+                </div>
+            </a>
+
+            <a href="https://starblast.dankdmitron.dev/" class="carte">
+                <div class="img-container"><img src="img/serveurlist.png" alt="Serverlist+"></div>
+                <div class="carte-content">
+                    <h2>Server list+</h2>
+                    <p>Live game info & regions</p>
+                </div>
+            </a>
+
+            <a href="https://starblast.fandom.com/wiki/Starblast_Wiki" class="carte">
+                <div class="img-container"><img src="img/wiki.png" alt="Wiki"></div>
+                <div class="carte-content">
+                    <h2>Wiki</h2>
+                    <p>Official Starblast Wiki</p>
+                </div>
+            </a>
+
+            <a href="https://modraxis.github.io/" class="carte">
+                <div class="img-container"><img src="img/shipshowcase.png" alt="shipshowcase"></div>
+                <div class="carte-content">
+                    <h2>Ship Showcase</h2>
+                    <p>Advanced ship renderings</p>
+                </div>
+            </a>
+
+            <a href="https://halcyonxt.github.io/ui-designer-tool/" class="carte">
+                <div class="img-container"><img src="img/uiDesigner.png" alt="UI designer"></div>
+                <div class="carte-content">
+                    <h2>UI Designer</h2>
+                    <p>Create clickable modding elements</p>
+                </div>
+            </a>
+
+            <a href="https://bhpsngum.github.io/starblast/ecp/" class="carte">
+                <div class="img-container"><img src="img/ECPicon.png" alt="Ecp viewer"></div>
+                <div class="carte-content">
+                    <h2>ECP Viewer</h2>
+                    <p>See all icons, metals, and lasers for each ECP</p>
+                </div>
+            </a>
+
+            <a href="https://bhpsngum.github.io/starblast/sscv/" class="carte">
+                <div class="img-container"><img src="img/codeconvert.png" alt="Code convert"></div>
+                <div class="carte-content">
+                    <h2>Code Convert</h2>
+                    <p>Modding space to ShipEditor code</p>
+                </div>
+            </a>
+
+            <a href="https://bhpsngum.github.io/starblast/mods/" class="carte">
+                <div class="img-container"><img src="img/SBmodsarchive.png" alt="SB Mod archive"></div>
+                <div class="carte-content">
+                    <h2>Mods Archive</h2>
+                    <p>Library of all game modes</p>
+                </div>
+            </a>
+
+            <a href="https://bhpsngum.github.io/starblast/mapeditor/" class="carte">
+                <div class="img-container"><img src="img/mapeditor.png" alt="Map Editor"></div>
+                <div class="carte-content">
+                    <h2>Map Editor</h2>
+                    <p>Easily create custom maps</p>
+                </div>
+            </a>
+
+            <a href="https://officialtroller.github.io/sbleaderboard/index.html" class="carte">
+                <div class="img-container"><img src="img/PDMlearboard.png" alt="PDM leaderboard"></div>
+                <div class="carte-content">
+                    <h2>PDM Leaderboard</h2>
+                    <p>Real-time PDM ranking & stats</p>
+                </div>
+            </a>
+
+            <a href="https://starblast-timeline.netlify.app/" class="carte">
+                <div class="img-container"><img src="img/SBclansandteam.png" alt="SB Clans and team"></div>
+                <div class="carte-content">
+                    <h2>Clans & teams timeline</h2>
+                    <p>timeline of SB clans and teams</p>
+                </div>
+            </a>
+
+            <a href="https://nebuleusethegreat.github.io/TeamGenerator/" class="carte">
+                <div class="img-container"><img src="img/TeamGenerator.png" alt="team generator"></div>
+                <div class="carte-content">
+                    <h2>Team generator</h2>
+                    <p>fair and comprehensive team builder</p>
+                </div>
+            </a>
+
+        </section>
+
     </div>
-
-    <div class="top-right-text">
-        <p>by 𝒩𝑒́𝒷𝓊𝓁𝑒𝓊𝓈𝑒</p>
-    </div>
-
-    <header>
-        <h1>ALL TOOLS FOR STARBLAST</h1>
-        <p class="subtitle">Welcome to this website, where you'll find lots of useful tools for Starblast</p>
-    </header>
-
-    <section class="container">
-
-        <a href="https://starblast.io/modding.html" class="carte">
-            <div class="img-container"><img src="img/modding.png" alt="modding space"></div>
-            <div class="carte-content">
-                <h2>Modding Space</h2>
-                <p>Code custom parts (ECP required)</p>
-            </div>
-        </a>
-
-        <a href="https://starblast.io/shipeditor/" class="carte">
-            <div class="img-container"><img src="img/shipeditor.png" alt="shipEditor"></div>
-            <div class="carte-content">
-                <h2>Ship Editor</h2>
-                <p>Create custom ships officially</p>
-            </div>
-        </a>
-
-        <a href="https://starblast.dankdmitron.dev/" class="carte">
-            <div class="img-container"><img src="img/serveurlist.png" alt="Serverlist+"></div>
-            <div class="carte-content">
-                <h2>Server list+</h2>
-                <p>Live game info & regions</p>
-            </div>
-        </a>
-
-        <a href="https://starblast.fandom.com/wiki/Starblast_Wiki" class="carte">
-            <div class="img-container"><img src="img/wiki.png" alt="Wiki"></div>
-            <div class="carte-content">
-                <h2>Wiki</h2>
-                <p>Official Starblast Wiki</p>
-            </div>
-        </a>
-
-        <a href="https://modraxis.github.io/" class="carte">
-            <div class="img-container"><img src="img/shipshowcase.png" alt="shipshowcase"></div>
-            <div class="carte-content">
-                <h2>Ship Showcase</h2>
-                <p>Advanced ship renderings</p>
-            </div>
-        </a>
-
-        <a href="https://halcyonxt.github.io/ui-designer-tool/" class="carte">
-            <div class="img-container"><img src="img/uiDesigner.png" alt="UI designer"></div>
-            <div class="carte-content">
-                <h2>UI Designer</h2>
-                <p>Create clickable modding elements</p>
-            </div>
-        </a>
-
-        <a href="https://bhpsngum.github.io/starblast/ecp/" class="carte">
-            <div class="img-container"><img src="img/ECPicon.png" alt="Ecp viewer"></div>
-            <div class="carte-content">
-                <h2>ECP Viewer</h2>
-                <p>See all icons, metals, and lasers for each ECP</p>
-            </div>
-        </a>
-
-        <a href="https://bhpsngum.github.io/starblast/sscv/" class="carte">
-            <div class="img-container"><img src="img/codeconvert.png" alt="Code convert"></div>
-            <div class="carte-content">
-                <h2>Code Convert</h2>
-                <p>Modding space to ShipEditor code</p>
-            </div>
-        </a>
-
-        <a href="https://bhpsngum.github.io/starblast/mods/" class="carte">
-            <div class="img-container"><img src="img/SBmodsarchive.png" alt="SB Mod archive"></div>
-            <div class="carte-content">
-                <h2>Mods Archive</h2>
-                <p>Library of all game modes</p>
-            </div>
-        </a>
-
-        <a href="https://bhpsngum.github.io/starblast/mapeditor/" class="carte">
-            <div class="img-container"><img src="img/mapeditor.png" alt="Map Editor"></div>
-            <div class="carte-content">
-                <h2>Map Editor</h2>
-                <p>Easily create custom maps</p>
-            </div>
-        </a>
-
-        <a href="https://officialtroller.github.io/sbleaderboard/index.html" class="carte">
-            <div class="img-container"><img src="img/PDMlearboard.png" alt="PDM leaderboard"></div>
-            <div class="carte-content">
-                <h2>PDM Leaderboard</h2>
-                <p>Real-time PDM ranking & stats</p>
-            </div>
-        </a>
-
-        <a href="https://starblast-timeline.netlify.app/" class="carte">
-            <div class="img-container"><img src="img/SBclansandteam.png" alt="SB Clans and team"></div>
-            <div class="carte-content">
-                <h2>Clans & teams timeline</h2>
-                <p>timeline of SB clans and teams</p>
-            </div>
-        </a>
-
-        <a href="https://nebuleusethegreat.github.io/TeamGenerator/" class="carte">
-            <div class="img-container"><img src="img/TeamGenerator.png" alt="team generator"></div>
-            <div class="carte-content">
-                <h2>Team generator</h2>
-                <p>fair and comprehensive team builder</p>
-            </div>
-        </a>
-
-    </section>
 
     <script src="script.js"></script>
 </body>
