@@ -94,6 +94,28 @@
 })();
 
 (function () {
+  const SCRIPT_URL = 'https://raw.githubusercontent.com/NebuleuseTheGreat/LCN8888/refs/heads/main/Modding_ShipEditor_theme_system_by_Nebuleuse.txt';
+  const FILENAME = 'Modding_ShipEditor_theme_system_by_Nebuleuse.txt';
+
+  document.querySelectorAll(`a[href="${SCRIPT_URL}"]`).forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      fetch(SCRIPT_URL)
+        .then(r => r.blob())
+        .then(blob => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = FILENAME;
+          a.click();
+          URL.revokeObjectURL(url);
+        })
+        .catch(() => window.open(SCRIPT_URL, '_blank'));
+    });
+  });
+})();
+
+(function () {
   const targets = document.querySelectorAll('.section, .hero-content');
   if (!('IntersectionObserver' in window) || !targets.length) return;
 
