@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme System Starblast Modding</title>
+<link rel="icon" href="assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+
+<header class="navbar">
+  <a href="#top" class="nav-brand">
+    <img src="assets/images/logo.png" alt="Theme System logo" class="nav-logo">
+    <span>THEME&nbsp;SYSTEM</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#presentation">Overview</a>
+    <a href="#video">Video</a>
+    <a href="#themes">Themes</a>
+    <a href="#installation">Installation</a>
+  </nav>
+  <a href="https://raw.githubusercontent.com/NebuleuseTheGreat/LCN8888/refs/heads/main/Modding_ShipEditor_theme_system_by_Nebuleuse.txt" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Install</a>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-grid"></div>
+    <div class="hero-content" id="presentation">
+      <p class="hero-tag">&lt;/&gt; USERSCRIPT — V3.7 — TAMPERMONKEY — BY NÉBULEUSE</p>
+      <h1 class="hero-title">
+        <span class="line">STARBLAST MODDING</span>
+        <span class="line accent">THEME&nbsp;SYSTEM</span>
+      </h1>
+      <p class="hero-desc">
+        Take control of the appearance of the ship editor and the Starblast modding interface.
+        Seven themes: <strong>Neon</strong>, <strong>Minimal</strong>, <strong>Retro</strong>,
+        <strong>Fluidic</strong>, <strong>Bubble</strong>, <strong>Dark</strong>, <strong>Gradient</strong>
+        an infinitely adjustable tint, and a custom background for your render panel.
+        Your workspace, your way.
+      </p>
+      <div class="hero-actions">
+        <a href="https://raw.githubusercontent.com/NebuleuseTheGreat/LCN8888/refs/heads/main/Modding_ShipEditor_theme_system_by_Nebuleuse.txt" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+          <span>Install the script</span>
+        </a>
+        <a href="#video" class="btn btn-ghost btn-large">
+          <span>&#9654; Watch the demo</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section video-section" id="video">
+    <p class="section-tag">01 — DEMO</p>
+    <h2 class="section-title">The script in <span class="accent">action</span></h2>
+    <p class="section-sub">A quick overview of all Theme System features.</p>
+    <div class="video-frame">
+      <div class="video-frame-corner tl"></div>
+      <div class="video-frame-corner tr"></div>
+      <div class="video-frame-corner bl"></div>
+      <div class="video-frame-corner br"></div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/zNYhOm_792o"
+          title="Demo — Starblast Modding Theme System"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="themes">
+    <p class="section-tag">02 — PREVIEW</p>
+    <h2 class="section-title">Seven <span class="accent">themes</span>, one script</h2>
+    <p class="section-sub">From vibrant neon to clean minimalism, switch your workspace in one click and tune the tint however you like.</p>
+    <div class="gallery-grid">
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-1.png" aria-label="Expand preview — variant 1"><img src="assets/images/theme-1.png" alt="Theme preview — variant 1" loading="lazy"></button></figure>
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-2.png" aria-label="Expand preview — variant 2"><img src="assets/images/theme-2.png" alt="Theme preview — variant 2" loading="lazy"></button></figure>
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-3.png" aria-label="Expand preview — variant 3"><img src="assets/images/theme-3.png" alt="Theme preview — variant 3" loading="lazy"></button></figure>
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-4.png" aria-label="Expand preview — variant 4"><img src="assets/images/theme-4.png" alt="Theme preview — variant 4" loading="lazy"></button></figure>
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-5.png" aria-label="Expand preview — variant 5"><img src="assets/images/theme-5.png" alt="Theme preview — variant 5" loading="lazy"></button></figure>
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-6.png" aria-label="Expand preview — variant 6"><img src="assets/images/theme-6.png" alt="Theme preview — variant 6" loading="lazy"></button></figure>
+      <figure class="gallery-item"><button class="gallery-trigger" data-full="assets/images/theme-7.png" aria-label="Expand preview — variant 7"><img src="assets/images/theme-7.png" alt="Theme preview — variant 7" loading="lazy"></button></figure>
+    </div>
+  </section>
+
+  <section class="section install-section" id="installation">
+    <p class="section-tag">03 — GETTING STARTED</p>
+    <h2 class="section-title">Installation in <span class="accent">9 steps</span></h2>
+    <p class="section-sub">Follow this step-by-step guide to install the script and customise your interface in minutes.</p>
+
+    <div class="steps-grid">
+
+      <article class="step-card">
+        <div class="step-number">01</div>
+        <div class="step-image">
+          <img src="assets/images/step-1.png" alt="Tampermonkey extension installation page">
+        </div>
+        <h3 class="step-title">Install the Tampermonkey extension</h3>
+        <p class="step-text">Follow <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener">this link</a> to reach the official Tampermonkey extension installation page.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">02</div>
+        <div class="step-image">
+          <img src="assets/images/step-2.png" alt="Opening the extension manager">
+        </div>
+        <h3 class="step-title">Open the extension manager</h3>
+        <p class="step-text">Click this button to open the extension manager. Make sure to complete the following steps before adding the script to Tampermonkey.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">03</div>
+        <div class="step-image">
+          <img src="assets/images/step-3.png" alt="Opening extension details">
+        </div>
+        <h3 class="step-title">Open the extension details</h3>
+        <p class="step-text">Click this button to open the extension details.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">04</div>
+        <div class="step-image">
+          <img src="assets/images/step-4.png" alt="Enabling the Tampermonkey permission setting">
+        </div>
+        <h3 class="step-title">Enable this setting</h3>
+        <p class="step-text">Enabling this setting will allow Tampermonkey to run scripts. Warning: some scripts can steal your data or cause harm — only use scripts from people you trust.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">05</div>
+        <div class="step-image">
+          <img src="assets/images/step-5.png" alt="Opening the Tampermonkey extension">
+        </div>
+        <h3 class="step-title">Open the Tampermonkey extension</h3>
+        <p class="step-text">Click the puzzle piece icon, then click here to open the extension.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">06</div>
+        <div class="step-image">
+          <img src="assets/images/step-6.png" alt="Opening the Tampermonkey dashboard">
+        </div>
+        <h3 class="step-title">Open the Tampermonkey dashboard</h3>
+        <p class="step-text">Click this button to continue.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">07</div>
+        <div class="step-image">
+          <img src="assets/images/step-7.png" alt="Adding a new Tampermonkey script">
+        </div>
+        <h3 class="step-title">Add a new script</h3>
+        <p class="step-text">Once Tampermonkey is open, click here to add a new script.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">08</div>
+        <div class="step-image">
+          <img src="assets/images/step-8.png" alt="Pasting the script into Tampermonkey">
+        </div>
+        <h3 class="step-title">Add the script</h3>
+        <p class="step-text">Delete the existing placeholder code and paste my script here.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">09</div>
+        <div class="step-image">
+          <img src="assets/images/step-9.png" alt="Saving the script in Tampermonkey">
+        </div>
+        <h3 class="step-title">Save</h3>
+        <p class="step-text">Simply press <strong>Ctrl&nbsp;+&nbsp;S</strong> and the script will be installed. You'll automatically return to the scripts list where you can see it installed and already running. You're done — enjoy, GG!</p>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">&#x2715;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+</div>
+
+<footer class="site-footer">
+  <img src="assets/images/logo.png" alt="Theme System logo" class="footer-logo">
+  <p>&#169; 2026 N&#233;buleuse &#8212; Starblast Modding &middot; Theme System v3.7</p>
+  <p class="footer-credits">Thanks to <strong>Bhpsngum</strong> for the use of features created for SET, and to <strong>Basit</strong> for the initial inspiration.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
