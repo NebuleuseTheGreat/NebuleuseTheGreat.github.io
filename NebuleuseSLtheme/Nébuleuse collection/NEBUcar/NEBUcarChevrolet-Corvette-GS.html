@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEBUcar Corvette Grand Sport</title>
+    <link rel="stylesheet" href="../../final-style.css">
+    <link rel="icon" href="../../picture/nebuSLthemelogo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="starfield"></canvas>
+    <div id="background"></div>
+    <div id="page-content">
+        <div id="top-bar">
+            <div class="top-bar-left">
+                <a href="../NEBUcar.html" class="top-logo-link">
+                    <img src="../../picture/nebuSLthemelogo.png" alt="Logo" class="top-logo">
+                </a>
+                <span class="top-title">| Nébuleuse ServerList+ theme</span>
+            </div>
+            <h1>NEBUcar corvette grand sport</h1>
+        </div>
+
+        <div class="container">
+            <h1>NEBUcar Corvette Grand Sport</h1>
+            <p>America's sports car, sharpened - the Grand Sport blends V8 muscle with genuine track manners.</p>
+
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="./picture/Chevrolet-Corvette-GS.jpg" alt="Image 1" class="image" onclick="openImage('./picture/Chevrolet-Corvette-GS.jpg')">
+                    <a href="./picture/Chevrolet-Corvette-GS.jpg" download="Chevrolet-Corvette-GS-wallpaper.jpg" class="btn-download" target="_blank">download the wallpaper</a>
+                </div>
+                <div class="image-item">
+                    <img src="./picture/Chevrolet-Corvette-GSVisual.png" alt="Image 2" class="image" onclick="openImage('./picture/Chevrolet-Corvette-GSVisual.png')">
+                    <a href="./theme/Chevrolet-Corvette-GS_theme.txt" download="document.txt" class="btn-download" target="_blank">download the theme</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeImage()">
+            <span id="close" class="close" onclick="closeImage()">&#10006;</span>
+            <img id="modal-image" src="" alt="Image agrandie">
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
